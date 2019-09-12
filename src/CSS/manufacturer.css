@@ -1,0 +1,25 @@
+.name {
+  padding: 20px !important;
+  padding-left: 50px !important;
+  padding-right: 50px !important;
+  align-content: center;
+}
+
+.icon {
+  padding: 1px !important;
+}
+
+.full {
+  height: 100% !important;
+  width: 100% !important;
+  align-content: center;
+}
+
+.button {
+  align-content: center;
+  margin-left: 20%;
+}
+
+.gridDivision {
+  align-content: center;
+}

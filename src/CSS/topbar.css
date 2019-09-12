@@ -1,0 +1,38 @@
+.heading
+{
+    width: 100%;
+    padding-left: 2%;
+    padding-top:1%;
+    padding-right: 2%; 
+}
+
+.verify
+{
+    color: #111; font-family: 'Helvetica Neue', sans-serif; font-size: 55px; font-weight: bold; letter-spacing: -1px; line-height: 1; 
+    
+}
+
+.button1
+{
+    margin-top: -3.3% !important;
+    padding-left: 76% !important;
+    font-size: 24px !important;
+    background: transparent !important;
+}
+
+.button2
+{
+    margin-top: -3.3% !important;
+    padding-left: 0.0% !important;
+    font-size: 24px !important;
+    background: transparent !important;
+}
+
+.button3
+{
+    margin-top: -3.3% !important;
+    padding-left: 0.0% !important;
+    font-size: 24px !important;
+    background: transparent !important;
+}
+ 

@@ -1,0 +1,27 @@
+.background
+{
+    /* background-color: whitesmoke !important; */
+    width: 100% !important;
+    height: 100%;;
+}
+
+.input
+{
+    float: left;
+    padding-left: 5% !important;
+    padding-top: 2% !important; 
+    width: 45% !important;
+}
+
+
+.table
+{
+    padding-left: 25%;
+}
+
+.button
+{
+    /* margin-right:50%; */
+    margin-left: -18% !important;
+    margin-top: 5%;
+}
