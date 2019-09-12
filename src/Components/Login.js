@@ -44,10 +44,3 @@ export class Login extends PureComponent {
 
 export default Login
 
-
-
-
-//"0xC5494c6443eA56fdaab1262f51F57cD76EbB9d2f"
-//"0x414243"
-//"0x3132333441423541"
-//"0x4368656e6e6169"

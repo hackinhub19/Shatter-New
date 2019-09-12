@@ -2,7 +2,6 @@ import React, { PureComponent } from 'react'
 import TopBar from './Components/Topbar'
 import './CSS/main.css'
 import { Input, Button, Header, Image, Table } from 'semantic-ui-react'
-import processor from './Images/processor.png'
 import token from './Components/abi'
 import Portis from '@portis/web3';
 import Web3 from 'web3';
@@ -110,7 +109,7 @@ export class Mainpage extends PureComponent {
                             <Table.Row>
                                 <Table.Cell>
                                     <Header as='h4' image>
-                                        <Image src={processor} rounded size='mini' />
+                                        <Image src='/images/avatar/small/matthew.png' rounded size='mini' />
                                         <Header.Content>
                                             CPU
               <Header.Subheader>Central Processing Unit</Header.Subheader>

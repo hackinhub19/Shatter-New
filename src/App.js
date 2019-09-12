@@ -1,6 +1,7 @@
 import React from 'react';
 import MainPage from './Mainpage'
 import Login from './Components/Login'
+import Signup from './Components/SignUp'
 import Manufacturer from './Components/manufacturer'
 
 const name = 'DELL';
@@ -12,7 +13,8 @@ export default class App extends React.Component {
   render() {
     return (
       <div>
-        <Manufacturer companyname={name} />
+        {/* <Manufacturer companyname={name} /> */}
+        <Signup />
       </div>
     );
   }
