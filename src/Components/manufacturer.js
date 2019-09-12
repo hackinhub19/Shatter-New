@@ -28,7 +28,7 @@ class Manufacturer extends Component {
             '0x'.concat('', Buffer.from(document.getElementById('battery_id').value).toString('hex')),
             '0x'.concat('', Buffer.from(document.getElementById('serviceid').value).toString('hex'))).send({ from: this.props.companyaddress })
             .on('transactionHash', function (hash) { console.log(hash) })
-            .then(window.location.reload)
+            
     }
     render() {
         return (

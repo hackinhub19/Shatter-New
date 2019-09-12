@@ -1,7 +1,38 @@
-.addressField {
-  align-content: left;
+
+
+.topbar
+{
+  color: #111; font-family: 'Helvetica Neue', sans-serif; font-size: 55px; font-weight: bold; letter-spacing: -1px; line-height: 1; 
+  /*padding: 2% !important;*/
+  padding-top: 1% !important; 
+  padding-left: 2% !important;
 }
 
-.formContainer {
-  margin-top: 15% !important;
+.Logout
+{
+  padding-left: 90% !important; 
+  margin-top: -2.6% !important;
+}
+
+.form
+{
+  padding: 5% !important;
+  font-weight: bold;
+}
+.admin
+{
+  padding-left: 85% !important; 
+  margin-top: -3.25% !important;
+}
+
+.btn1
+{
+  background: transparent !important;
+  font-size: 24px !important;
+}
+
+.divider
+{
+  padding-left: 2% !important;
+  padding-right: 2% !important; 
 }
