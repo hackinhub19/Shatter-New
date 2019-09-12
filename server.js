@@ -34,3 +34,24 @@ connection.connect(function(err) {
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}`);
 });
+
+app.post('/company', function(req,res)
+{
+    var postData = req.body;
+    connection.query('INSERT INTO company SET ?',postData, function (error, results, fields){
+            if (error) throw error;
+            res.end(JSON.stringify(results));
+        }
+    );
+});
+
+app.post('/details', function(req,res)
+{
+    var postData = req.body;
+    connection.query('INSERT INTO Details SET ?',postData, function (error, results, fields){
+            if (error) throw error;
+            res.end(JSON.stringify(results));
+        }
+    );
+});
+

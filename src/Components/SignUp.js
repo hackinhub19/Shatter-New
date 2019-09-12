@@ -38,9 +38,48 @@ export default class SignUp extends React.Component {
     }
     handleSubmit = async e => {
         e.preventDefault();
-        console.log(document.getElementById('country').value);
+
+        var url = "http://localhost:4000/company";
+        fetch(url, {
+            method: "POST", // or 'PUT'
+            mode: "cors",
+            body: JSON.stringify({
+                address:document.getElementById('add').value,
+                name:document.getElementById('name').value 
+            }), 
+            headers: {
+              "Content-Type": "application/json"
+            }
+          })
+          .then(res => res.body)
+        .then(response => console.log("Success:", JSON.stringify(response)))
+        .catch(error => console.error("Error:", error));
+
+        var url = "http://localhost:4000/details";
+        fetch(url, {
+            method: "POST", // or 'PUT'
+            mode: "cors",
+            body: JSON.stringify({
+                address:document.getElementById('add').value,
+                reg_number:document.getElementById('reg_num').value,
+                addr:document.getElementById('reg_num').value,
+                place:document.getElementById('reg_num').value,
+                city:document.getElementById('reg_num').value,
+                state:document.getElementById('reg_num').value,
+                country: document.getElementById('reg_num').value
+            }), 
+            headers: {
+              "Content-Type": "application/json"
+            }
+          })
+          .then(res => res.body)
+        .then(response => console.log("Success:", JSON.stringify(response)))
+        .catch(error => console.error("Error:", error));
+
         await token2.methods.new_registration(document.getElementById('add').value, '0x'.concat('', Buffer.from(document.getElementById('name').value).toString('hex')), '0x'.concat('', Buffer.from(document.getElementById('reg_num').value).toString('hex')),
         '0x'.concat('', Buffer.from(document.getElementById('country').value).toString('hex'))).send({ from: this.state.wallet_add }).on('transactionHash', function (hash) { console.log(hash) })
+
+        
     }
 
     render() {
