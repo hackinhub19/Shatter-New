@@ -11,9 +11,10 @@ class Manufacturer extends Component {
     constructor(props) {
         super(props);
         this.state={
-            company_name:'Login'
+            company_name:''
         }
     }
+    
 
     componentDidMount()
     {
@@ -33,8 +34,9 @@ class Manufacturer extends Component {
                     throw new Error("Bad response from server");
                 }
                 return response.json();
-            }).then(function(data) {
-                this.setState({company_name: data});
+            }).then(data => {
+                console.log(data[0].name)
+                this.setState({company_name: data[0].name});
             }).catch(err => {
             console.log('caught it!',err);
             })

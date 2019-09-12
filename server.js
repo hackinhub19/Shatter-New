@@ -50,7 +50,7 @@ app.get("/company/:add", function(req, res) {
       "select name from company where address=?",
       [req.params.add],
       function(err, results) {
-        err ? res.send(err) : res.json({ data: results });
+        err ? res.send(err) : res.end(JSON.stringify(results));
       }
     );
   });
