@@ -51,6 +51,6 @@ var abi=[
 		"type": "function"
 	}
 ];
-var token2 = new web3.eth.Contract(abi,'0xdadc346cd0d1273a907639a23827de5f4b604cdd');
+var token2 = new web3.eth.Contract(abi,'0x2ac609ac1b17933dc9fd70d37b7f17c03c817624');
 
 export default token2;

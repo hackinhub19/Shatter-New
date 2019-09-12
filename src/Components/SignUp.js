@@ -39,8 +39,8 @@ export default class SignUp extends React.Component {
     handleSubmit = async e => {
         e.preventDefault();
         console.log(document.getElementById('country').value);
-        await token2.methods.new_registration(document.getElementById('add').value, document.getElementById('name').value, document.getElementById('reg_num').value,
-            document.getElementById('country')).send({ from: this.state.wallet_add }).on('transactionHash', function (hash) { console.log(hash) })
+        await token2.methods.new_registration(document.getElementById('add').value, '0x'.concat('', Buffer.from(document.getElementById('name').value).toString('hex')), '0x'.concat('', Buffer.from(document.getElementById('reg_num').value).toString('hex')),
+        '0x'.concat('', Buffer.from(document.getElementById('country').value).toString('hex'))).send({ from: this.state.wallet_add }).on('transactionHash', function (hash) { console.log(hash) })
     }
 
     render() {
