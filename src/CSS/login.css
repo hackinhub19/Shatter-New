@@ -31,21 +31,20 @@
   /* height: 100% !important;
     width: 100% !important; */
   /* margin: 50% !important; */
-  margin-bottom: 13.5% !important;
-  margin-left: 85% !important;
-  margin-top: 10% !important;
+  /* margin-bottom: 13.5% !important; */
+  /* margin-left: 85% !important; */
+  /* margin-top: 10% !important; */
   height: 5% !important;
-  width: 10% !important;
-  padding: 30px !important;
+  width: 12% !important;
+  /* padding: 30px !important; */
   background-color: rgb(13, 212, 226) !important;
   
   color: black !important;
-  font-size: 70% !important;
+  font-size: 24 px !important;
 }
 
 .landing-image {
-  background-image: url("https://www.pcma.org/wp-content/uploads/2018/11/Trendspotter-Event-Tech-Trend-Banner-818x460.jpg") !important;
-  background-size: cover !important;
+  
 }
 
 .heading {
@@ -58,4 +57,13 @@
 .abc {
   height: 100% !important;
   width: 100% !important;
+  background-image: url("https://www.pcma.org/wp-content/uploads/2018/11/Trendspotter-Event-Tech-Trend-Banner-818x460.jpg") !important;
+  background-size: cover !important;
+}
+
+.btn
+{
+  margin-left: 51% !important; 
+  padding-bottom: 30% !important;
+  margin-top: 17% !important;
 }

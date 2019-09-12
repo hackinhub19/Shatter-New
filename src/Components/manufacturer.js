@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Grid, Image, Container } from 'semantic-ui-react'
 import { Input } from 'semantic-ui-react'
-import { Button, Icon } from 'semantic-ui-react'
+import { Button, Icon,Divider } from 'semantic-ui-react'
 import token from './abi'
 import '../CSS/manufacturer.css'
 
@@ -10,7 +10,19 @@ import '../CSS/manufacturer.css'
 class Manufacturer extends Component {
     constructor(props) {
         super(props);
+        this.state={
+            company_name:'Login'
+        }
+    }
 
+    componentDidMount()
+    {
+        console.log('New page');
+        console.log(this.props.address);
+        var url = "http://localhost:4000/company/" + this.props.address;
+        fetch(url)
+            .then(res => res.json())
+            .then(company_name => this.setState({company_name}))
     }
 
     handleSubmit = async e => {
@@ -33,7 +45,20 @@ class Manufacturer extends Component {
     render() {
         return (
             <div className="full">
-                
+                <div className='topbar'>
+                    Verify.
+
+                </div>
+                <div className="Logout">
+                    <Button className="btn1">LogOut</Button>
+                </div>
+                <div className="admin">
+                    <Button className="btn1">{this.state.company_name}</Button>
+                </div>
+                <div className="divider">
+                    <Divider />
+                </div>
+                    <div>
                     <Container textAlign="center">
                     <Grid centered>
                         <Grid.Row>
@@ -131,7 +156,7 @@ class Manufacturer extends Component {
                         </Grid.Row>
                     </Grid>
                     </Container>
-                
+                </div>
                 <div className="button">
 
                     <Button primary onClick={this.handleSubmit} >Submit</Button>
