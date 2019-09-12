@@ -18,25 +18,28 @@ export class Login extends PureComponent {
 
     handleClick = async e => {
         e.preventDefault();
-      var address=  await web3.eth.getAccounts()
+        var address = await web3.eth.getAccounts()
             .then(accounts => {
                 const address1 = accounts[0]
                 return address1;
             })
         console.log(address);
-        var bool = await token2.methods.check().call({from: address});
+        var bool = await token2.methods.check().call({ from: address });
         console.log(bool);
-        if(bool)
-        {
+        if (bool) {
             console.log('Inside ');
 
-            ReactDOM.render(<Manufacturer companyaddress={address}/>, document.getElementById('root'));
+            ReactDOM.render(<Manufacturer companyaddress={address} />, document.getElementById('root'));
         }
     }
     render() {
         return (
-            <div>
-                <Button primary className="loginbutton" onClick={this.handleClick}>Signin</Button>
+            <div className="abc">
+                <div class="ui landing-image fluid container">
+                    <p className="heading">Verify.</p>
+                    <h1 class="ui inverted header"> <Button primary className="loginbutton" onClick={this.handleClick} >SIGN IN</Button></h1>
+                </div>
+
             </div>
         )
     }
