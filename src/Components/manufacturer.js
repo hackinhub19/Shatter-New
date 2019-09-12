@@ -18,11 +18,26 @@ class Manufacturer extends Component {
     componentDidMount()
     {
         console.log('New page');
-        console.log(this.props.address);
-        var url = "http://localhost:4000/company/" + this.props.address;
-        fetch(url)
-            .then(res => res.json())
-            .then(company_name => this.setState({company_name}))
+        console.log(this.props.company);
+        // //console.log();
+        var url = "http://localhost:4000/company/" + this.props.company;
+        // fetch(url)
+        //     .then(res => res.json())
+        //     .then(company_name => this.setState({company_name}))
+
+
+            fetch(url, {
+                method: 'GET'
+            }).then(function(response) {
+                if (response.status >= 400) {
+                    throw new Error("Bad response from server");
+                }
+                return response.json();
+            }).then(function(data) {
+                this.setState({company_name: data});
+            }).catch(err => {
+            console.log('caught it!',err);
+            })
     }
 
     handleSubmit = async e => {

@@ -29,13 +29,13 @@ export class Login extends PureComponent {
         if (bool) {
             console.log('Inside ');
 
-            ReactDOM.render(<Manufacturer companyaddress={address} />, document.getElementById('root'));
+            ReactDOM.render(<Manufacturer company={address}/>, document.getElementById('root'));
         }
     }
     render() {
         return (
             <div className="abc">
-                <div class="ui landing-image fluid container">
+                <div className="ui landing-image fluid container">
                     <p className="heading">Verify.</p>
                     <div className="btn">
                     <Button primary className="loginbutton" onClick={this.handleClick} >SIGN IN</Button>

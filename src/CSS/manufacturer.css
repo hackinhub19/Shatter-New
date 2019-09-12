@@ -17,7 +17,8 @@
 
 .button {
   align-content: center;
-  margin-left: 20%;
+  padding-left: 50% !important;
+  padding-right: 50% !important;
 }
 
 .gridDivision {
