@@ -1,9 +1,15 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
-
-To run this program, follow these instructions:
-**1.** Clone the repository by running ### 'git clone '
+To run the application, you should have npm and create-react-app installed.<br>
+To run this program, follow these instructions:<br>
+**1.** Clone the repository by running ### 'git clone https://github.com/hackinhub19/Shatter-New.git'. <br>
+**2.** Now, move into the cloned directory and run ### 'sudo npm install'. This will install all the required dependencies.<br>
+**3** Run ### 'sudo npm start' to start the development server.<br>
+(There are two users of this application along with the admin- Manufacturer and the Customer)<br>
+**4** Typing ### 'localhost:3000/admin' will take you to the admin page. Only admin has the right to register a new manufacturer.<br>
+Typing ### 'localhost:3000/login' will take you to the Login page of the manufacturer. The manufacturer only needs to login into portis and his page will automatically be displayed.<br>
+Typing ### 'localhost:3000/mainpage' will take you to the consumer's page. The customer needs to enter the serial number of the product and he will get a portis popup to login.
 
 In the project directory, you can run:
 
