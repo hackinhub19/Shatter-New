@@ -1,38 +1,68 @@
-
-
-.topbar
-{
-  color: #111; font-family: 'Helvetica Neue', sans-serif; font-size: 55px; font-weight: bold; letter-spacing: -1px; line-height: 1; 
+.topbar {
+  color: #111;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 55px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 1;
   /*padding: 2% !important;*/
-  padding-top: 1% !important; 
+  padding-top: 1% !important;
   padding-left: 2% !important;
 }
 
-.Logout
-{
-  padding-left: 90% !important; 
+.Logout {
+  padding-left: 90% !important;
   margin-top: -2.6% !important;
 }
 
-.form
-{
-  padding: 5% !important;
+.form {
+  padding-top: 3% !important;
   font-weight: bold;
+  padding-left: 1% !important;
+  text-align: left !important;
+  background-color: orange;
 }
-.admin
-{
-  padding-left: 85% !important; 
+.admin {
+  padding-left: 85% !important;
   margin-top: -3.25% !important;
 }
 
-.btn1
-{
+.btn1 {
   background: transparent !important;
   font-size: 24px !important;
 }
 
-.divider
-{
+.divider {
   padding-left: 2% !important;
-  padding-right: 2% !important; 
+  padding-right: 2% !important;
+}
+
+.head {
+  color: whitesmoke;
+}
+
+.containerform {
+  align-content: center !important;
+  align-items: center !important;
+}
+
+.addressfield {
+  padding: 5% !important;
+  padding-left: 50px !important;
+  padding-right: 30px !important;
+  /* padding-left: ; */
+  margin-bottom: 10px !important;
+}
+
+#country {
+  margin-top: 5% !important;
+}
+
+.finalButtonD {
+  align-items: center !important;
+  margin-left: 10% !important;
+}
+
+.groupN {
+  text-align: left !important;
 }

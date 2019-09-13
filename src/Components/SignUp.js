@@ -113,25 +113,31 @@ export default class SignUp extends React.Component {
                 </div>
 
                 <div className="form">
-                    <Container >
-                        <Form >
-                            <Form.Group widths='equal'>
+                    <Container className="containerform">
+                        <Form className="formmain">
+                            <Form.Group widths='equal' className="groupN">
                                 <Form.Input fluid focus label='COMPANY NAME:' placeholder='Please enter your company name' id="name" />
                                 <Form.Input fluid focus label='REGISTER NUMBER OF YOUR COMPANY' placeholder='Please enter a valid register number' id="reg_num" />
                             </Form.Group>
-                            <Form.Group widths='equal' inline>
+                            <Form widths='equal' inline>
                                 <label>ADDRESS:</label>
-                                <Form.Input fluid label='PLACE' placeholder='street or layout' className='addressField' id="place" />
-                                <Form.Input fluid label='CITY' placeholder='' className='addressField' id="city" />
-                                <Form.Input fluid label='STATE' placeholder='Please enter State your company name' className='addressField' id="state" />
+                                <Form.Input  label='PLACE' placeholder='street or layout' className='addressField' id="place" />
+                                <Form.Input  label='CITY' placeholder='' className='addressField' id="city" />
+                                <Form.Input  label='STATE' placeholder='Please enter State your company name' className='addressField' id="state" />
+                                <br/>
                                 <CountryDropdown id="country"
                                     value={country}
                                     onChange={(val) => this.selectCountry(val)} />
-                            </Form.Group>
+                                    <br/>
+                            
 
                             <Form.TextArea label='Ethereum Address' id="add" placeholder='Please give describe the service you offer/products manucatured.' />
+                            <br/>
+                            <br/>
                             <Form.Button color='olive' onClick={this.handleSubmit}>Submit</Form.Button>
 
+                        </Form>
+                        <br/>
                         </Form>
                     </Container>
                 </div>
