@@ -8,8 +8,9 @@ To run this program, follow these instructions:<br>
 **3** Run ### 'sudo npm start' to start the development server.<br>
 (There are two users of this application along with the admin- Manufacturer and the Customer)<br>
 **4** Typing ### 'localhost:3000/admin' will take you to the admin page. Only admin has the right to register a new manufacturer.<br>
-Typing ### 'localhost:3000/login' will take you to the Login page of the manufacturer. The manufacturer only needs to login into portis and his page will automatically be displayed.<br>
-Typing ### 'localhost:3000/mainpage' will take you to the consumer's page. The customer needs to enter the serial number of the product and he will get a portis popup to login.
+  Typing ### 'localhost:3000/login' will take you to the Login page of the manufacturer. The manufacturer only needs to login     into portis and his page will automatically be displayed.<br>
+  Typing ### 'localhost:3000/mainpage' will take you to the consumer's page. The customer needs to enter the serial number of     the product and he will get a portis popup to login.<br>
+**5** The app functionality starts with the admin registering a company. There can be only one admin. To set the admin, go to Contracts folder and in login.sol, 
 
 In the project directory, you can run:
 
