@@ -55,7 +55,7 @@ class Manufacturer extends Component {
             '0x'.concat('', Buffer.from(document.getElementById('ssd_id').value).toString('hex')),
             '0x'.concat('', Buffer.from(document.getElementById('graphics_id').value).toString('hex')),
             '0x'.concat('', Buffer.from(document.getElementById('battery_id').value).toString('hex')),
-            '0x'.concat('', Buffer.from(document.getElementById('serviceid').value).toString('hex'))).send({ from: this.props.companyaddress })
+            '0x'.concat('', Buffer.from(document.getElementById('serviceid').value).toString('hex'))).send({ from: this.props.company })
             .on('transactionHash', function (hash) { console.log(hash) })
             
     }

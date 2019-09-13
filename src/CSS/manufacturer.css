@@ -15,12 +15,18 @@
   align-content: center;
 }
 
-.button {
+/* .button {
   align-content: center;
   padding-left: 50% !important;
-  padding-right: 50% !important;
-}
+  margin-top: 40% !important;
+  margin-right: 50% !important;
+} */
 
 .gridDivision {
   align-content: center;
+}
+
+.admin
+{
+  padding-left: 60% !important; 
 }

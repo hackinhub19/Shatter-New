@@ -1,27 +1,42 @@
-.background
-{
+.background {
     /* background-color: whitesmoke !important; */
     width: 100% !important;
-    height: 100%;;
-}
-
-.input
-{
+    height: 100%;
+  }
+  .backgroundone {
+    background-color: whitesmoke;
+    width: 45% !important;
+  }
+  
+  .input {
     float: left;
     padding-left: 5% !important;
-    padding-top: 2% !important; 
+    padding-top: 2% !important;
     width: 45% !important;
-}
-
-
-.table
-{
+  }
+  
+  .table {
     padding-left: 25%;
-}
-
-.button
-{
+  }
+  
+  .button {
     /* margin-right:50%; */
-    margin-left: -18% !important;
-    margin-top: 5%;
-}
+    margin-left: -20% !important;
+    margin-top: 3%;
+    padding-left: 1% !important;
+    padding-right: 1% !important;
+  }
+  
+  .head {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 20px;
+    color: rgb(15, 12, 17) !important;
+  }
+  
+  .details {
+    margin-right: 200px !important;
+  }
+  
+  .cont {
+    color: hsl(110, 69%, 61%) !important;
+  }
