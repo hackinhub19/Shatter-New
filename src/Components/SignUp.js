@@ -39,8 +39,9 @@ export default class SignUp extends React.Component {
     handleSubmit = async e => {
         e.preventDefault();
 
-        var url = "http://localhost:4000/company";
-        fetch(url, {
+        var url = "http://localhost:4000/company1";
+      
+       await fetch(url, {
             method: "POST", // or 'PUT'
             mode: "cors",
             body: JSON.stringify({
@@ -53,10 +54,14 @@ export default class SignUp extends React.Component {
           })
           .then(res => res.body)
         .then(response => console.log("Success:", JSON.stringify(response)))
-        .catch(error => console.error("Error:", error));
+        .catch(error => console.error("Error:", error))
+        
 
-        var url = "http://localhost:4000/details";
-        fetch(url, {
+        
+
+
+        var url1 = "http://localhost:4000/details";
+        await fetch(url1, {
             method: "POST", // or 'PUT'
             mode: "cors",
             body: JSON.stringify({
@@ -78,9 +83,15 @@ export default class SignUp extends React.Component {
 
         await token2.methods.new_registration(document.getElementById('add').value, '0x'.concat('', Buffer.from(document.getElementById('name').value).toString('hex')), '0x'.concat('', Buffer.from(document.getElementById('reg_num').value).toString('hex')),
         '0x'.concat('', Buffer.from(document.getElementById('country').value).toString('hex'))).send({ from: this.state.wallet_add }).on('transactionHash', function (hash) { console.log(hash) })
+    }
+          
+    // handleSubmit2 = async e => {
+        
+        
+
 
         
-    }
+    // }
 
     render() {
         const { value } = this.state;

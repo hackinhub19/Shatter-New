@@ -45,6 +45,16 @@ app.post('/details', function(req,res)
     );
 });
 
+app.post('/company1', function(req,res)
+{
+    var postData = req.body;
+    connection.query('INSERT INTO company SET ?',postData, function (error, results, fields){
+            if (error) throw error;
+            res.end(JSON.stringify(results));
+        }
+    );
+});
+
 app.get("/company/:add", function(req, res) {
     connection.query(
       "select name from company where address=?",
