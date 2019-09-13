@@ -2,15 +2,22 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 To run the application, you should have npm and create-react-app installed.<br>
+Also, you should be registered on portis and have atleast two ethereum address. One will represent the admin and the other will be the manufacturer.<br><br>
 To run this program, follow these instructions:<br>
 **1.** Clone the repository by running ### 'git clone https://github.com/hackinhub19/Shatter-New.git'. <br>
 **2.** Now, move into the cloned directory and run ### 'sudo npm install'. This will install all the required dependencies.<br>
-**3** Run ### 'sudo npm start' to start the development server.<br>
+**3.** The app functionality starts with the admin registering a company. There can be only one admin. To set the admin, go to Contract folder inside src and in login.sol 16th line, remove the previous address and paste the new address.<br>
+**4.** Run ### 'sudo npm start' to start the development server.<br>
 (There are two users of this application along with the admin- Manufacturer and the Customer)<br>
-**4** Typing ### 'localhost:3000/admin' will take you to the admin page. Only admin has the right to register a new manufacturer.<br>
+**5.** Typing ### 'localhost:3000/admin' will take you to the admin page. Only admin has the right to register a new manufacturer.<br>
   Typing ### 'localhost:3000/login' will take you to the Login page of the manufacturer. The manufacturer only needs to login     into portis and his page will automatically be displayed.<br>
   Typing ### 'localhost:3000/mainpage' will take you to the consumer's page. The customer needs to enter the serial number of     the product and he will get a portis popup to login.<br>
-**5** The app functionality starts with the admin registering a company. There can be only one admin. To set the admin, go to Contracts folder and in login.sol, 
+**6.** Now, admin should copy the address of manufacturer and and fill the form in ### 'localhost:3000/admin'.<br>
+**7.** Now, the manufacturer's address should be selected from portis and he can login in 'localhost:3000/login'.<br>
+**8.** Download the application=barcode to pc on your mobile.Also download the server file for your specific OS.
+Run the executable file.There is a QR CODE displayed on your computer screen ,which has to be scanned from mobile app to connect to server and set the QR serial number.
+Once connected you can place the curser on the input field of the browser.Thats all!!! Now start scanning the code and you can see the value in the screen.
+LINK :### 'https://www.youtube.com/watch?v=J2WPjZ-RhfE'
 
 In the project directory, you can run:
 
